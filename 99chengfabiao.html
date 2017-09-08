@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<!-- 	<table bgcolor="" align="center"></table>
+ -->	<script>
+		document.write('<table border=1 cellpadding="6" cellspacing="0" align="center">');
+		document.write('<caption style="font-size:40px;">9*9乘法表</caption>');
+			for (var i = 1; i <10; i++) {
+				if (i%2==0) 
+					{document.write('<tr bgcolor="skyblue">');}
+				else{
+					document.write('<tr bgcolor="#f1ffad">');
+					}
+					for(var j =1; j<=i;j++){
+						document.write('<td>');
+						document.write(i+"x"+j+"="+i*j);
+						document.write('</td>');
+					}
+				document.write('</tr>');
+			}
+		document.write('</table>');
+	</script>
+</body>
+</html>
